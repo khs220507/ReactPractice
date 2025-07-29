@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+
+/* App.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;    /* 수평 가운데 정렬 */
+  justify-content: center; /* 수직 가운데 정렬 */
+  min-height: 100vh;      /* 전체 화면 높이 */
+  padding: 20px;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;             /* 수직 가운데 정렬 (옵션) */
+  justify-content: space-between; /* 양쪽으로 정렬 (옵션) */
+  width: 300px;                    /* 가로폭이 있어야 정렬이 보임 */
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;  /* 구분선 (옵션) */
+}
+
+.todo-text {
+  cursor: pointer;
+}
+
+.todo-text.done {
+  text-decoration: line-through;
+  color: gray;
+  opacity: 0.6;
+}
+
+.add-button {
+  margin-left: 10px;
+}
